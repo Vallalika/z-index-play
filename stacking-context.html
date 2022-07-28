@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stacking-context-style.css">
+    </head>
+    <body>
+        <div id="div1">
+            <h1>Division Element #1</h1>
+            <h2>5 - Stacking Context 1: layer 0, changed to layer 5 by z-index</h2>
+            <code>position: relative;<br/>
+            z-index: 5;</code>
+        </div>
+        
+        <div id="div2">
+            <h1>Division Element #2</h1>
+            <h2>2 - Stacking Context 2 (layer 1, changed to layer 2 by z-index)</h2>
+            <code>position: relative;<br/>
+            z-index: 2;</code>
+        </div>
+        
+        <div id="div3">
+            <h2>4 - Stacking Context 3
+            <br />(layer 2, changed to layer 4 by z-index)</h2>
+            
+            <div id="div4">
+                <h1>Division Element #4</h1>
+                <h2>4.6 - Child stacking Context 1</h2>
+                <code>position: relative;<br/>
+                z-index: 6;</code>
+            </div>
+            
+            <h1>Division Element #3</h1>
+            <code>position: absolute;<br/>
+            z-index: 4;</code>
+        
+            <div id="div5">
+                <h1>Division Element #5</h1>
+                <h2>4.1 Child stacking Context 2</h2>
+                <code>position: relative;<br/>
+                z-index: 1;</code>
+            </div>
+        
+            <div id="div6">
+                <h1>Division Element #6</h1>
+                <h2>4.3 Child stacking Context 3</h2>
+                <code>position: absolute;<br/>
+                z-index: 3;</code>
+            </div>
+
+        </div>
+        
+    </body>
+</html>
