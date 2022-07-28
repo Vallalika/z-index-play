@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="z-index-style.css">
+    </head>
+    <body>
+        <div id="abs1">
+            <strong>DIV #1</strong>
+            <br />position: absolute;
+            <br />no z-index
+            <br />so should be layer 0, above div 5 as it has an absolute position
+        </div>
+        
+        <div id="rel1">
+            <strong>DIV #2</strong>
+            <br />position: relative;
+            <br />z-index: 3;
+            <br />layer 3
+        </div>
+        
+        <div id="rel2">
+            <strong>DIV #3</strong>
+            <br />position: relative;
+            <br />z-index: 2;
+            <br />layer 2
+        </div>
+        
+        <div id="abs2">
+            <strong>DIV #4</strong>
+            <br />position: absolute;
+            <br />z-index: 1;
+            <br />layer 1
+        </div>
+        
+        <div id="sta1">
+            <strong>DIV #5</strong>
+            <br />no positioning
+            <br />z-index: 8;
+            <br />This z-index has no effect as this div has no positioning.
+            <br />So it show on layer 0 by default.
+        </div>
+    </body>
+</html>
