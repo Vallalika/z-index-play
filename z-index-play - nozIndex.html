@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="abs1" class="absolute">
+            <strong>DIV #1</strong>
+            <br />
+            position: absolute;
+            <br />
+            First div with non static position. Shows over statically positioned elements. Position 3.
+        </div>
+        <div id="rel1" class="relative">
+            <strong>DIV #2</strong>
+            <br />
+            position: relative;
+            <br />
+            Second div with non static position. Shows over statically positioned elements and previous non-statically positioned divs in the html. Position 4.
+        </div>
+        <div id="rel2" class="relative">
+            <strong>DIV #3</strong>
+            <br />
+            position: relative;
+            <br />
+            Third div with non static position. Shows over statically positioned elements and previous non-statically positioned divs in the html. Position 5.
+        </div>
+        <div id="abs2" class="absolute">
+            <strong>DIV #4</strong>
+            <br />
+            position: absolute;
+            <br />
+            Fourth div with non static position. Shows over statically positioned elements and previous non-statically positioned divs in the html. Position 6.
+        </div>
+        <div id="sta1" class="static">
+            <strong>DIV #5</strong>
+            <br />
+            position: static;
+            <br />
+            Shows under everything as position is static. Position 1.
+        </div>
+        <div id="sta1" class="static">
+            <strong>DIV #6</strong>
+            <br />
+            position: static;
+            <br />
+            Shows under everything as position is static... but is over Div 4 as appears later in the html file. Position 2.
+        </div>
+    </body>
+</html>
